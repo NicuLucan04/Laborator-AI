@@ -1,0 +1,22 @@
+#Date Numerice/Exemple
+# print(10+3)
+# print(10-3)
+# print(pow(5, 2))
+# print(round(5.46))
+# print(round(5.468, 2))
+# print(hex(512))
+# age=input("How old are you?")
+#
+# print("I'm thirsty")
+# print('Hey you!'[4])
+# name='Nicu Lucan'
+# print(name[5])
+# print(name[8])
+# print(name[::2])
+# print('Hi there'+' Timmy')
+# print("Adelina nu te mai uita la mine in calculator   ".strip())
+print(bool(None))
+print(bool(False))
+print(bool(0))
+print(bool(range(0)))
+print(bool(4123))
