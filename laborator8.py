@@ -1,0 +1,21 @@
+import pandas as pd
+
+data = pd.read_csv('StudentsPerformance.csv')
+print(data.head())
+# print("Informații Generale")
+# data.info()
+# print("\nDimensiune (rânduri, coloane):", data.shape)
+# print("\nNumăr de valori nule pe fiecare coloană:")
+# print(data.isnull().sum())
+# statistici = data.describe()
+# print(statistici)
+# valori_lipsa = data.isnull().sum()
+# print("Numărul de valori lipsă pentru fiecare coloană:")
+# print(valori_lipsa)
+# total_lipsa = data.isnull().sum().sum()
+# print(f"\nTotal valori lipsă în setul de date: {total_lipsa}")
+# Ex 2
+# categorice = data.select_dtypes(include=['object']).columns.tolist()
+# numerice = data.select_dtypes(include=['number']).columns.tolist()
+# print("Variabile Categorice:", categorice)
+# print("Variabile Numerice:", numerice)
