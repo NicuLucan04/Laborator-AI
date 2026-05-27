@@ -2,6 +2,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix,classification_report
 iris=load_iris()
 X=iris.data
 y=iris.target
@@ -28,3 +29,14 @@ knn=KNeighborsClassifier(n_neighbors=3)
 knn.fit(X_train_scaled,y_train)
 acuratete=knn.score(X_test_scaled,y_test)
 print("\nAcuratetea modelului KNN:", acuratete)
+#ex 6
+y_pred=knn.predict(X_test_scaled)
+matrice=confusion_matrix(y_test,y_pred)
+print("\nMatricea de confuzie:")
+print(matrice)
+report=classification_report(y_test,y_pred)
+target_names=iris.target_names
+print(report)
+
+
+
